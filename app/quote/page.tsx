@@ -41,7 +41,7 @@ export default function QuotePage() {
 
   return (
     <div className="min-h-screen bg-teal-50">
-      <div className="container py-16 md:py-24">
+      <div className="container px-4 md:px-6 max-w-7xl mx-auto py-16 md:py-24">
         <div className="grid gap-12 md:grid-cols-2">
           {/* Left Section - Contact Info */}
           <div className="space-y-10 text-left md:flex md:flex-col md:justify-center">
