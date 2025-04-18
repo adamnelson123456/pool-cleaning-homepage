@@ -117,7 +117,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container px-4 md:px-6 max-w-7xl mx-auto flex h-16 items-center justify-between">
           <nav className="hidden md:flex gap-6">
             <Link
               href="#home"
@@ -234,10 +234,10 @@ export default function Home() {
         </section>
 
         <section id="services" className="py-16 md:py-24 bg-white">
-          <div className="container">
-            <div className="mb-12 text-center">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+            <div className="mb-12 text-center max-w-3xl mx-auto">
               <h2 className="mb-2 text-3xl font-bold tracking-tight md:text-4xl">Our Services</h2>
-              <p className="mx-auto max-w-2xl text-muted-foreground">
+              <p className="text-muted-foreground">
                 Professional pool services to keep your water pristine, equipment running smoothly, and pool looking
                 beautiful.
               </p>
@@ -420,10 +420,10 @@ export default function Home() {
             galleryInView ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div className="container">
-            <div className="mb-12 text-center">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+            <div className="mb-12 text-center max-w-3xl mx-auto">
               <h2 className="mb-2 text-3xl font-bold tracking-tight md:text-4xl">Our Work</h2>
-              <p className="mx-auto max-w-2xl text-muted-foreground">
+              <p className="text-muted-foreground">
                 See the difference our professional pool services can make with these before and after transformations.
               </p>
             </div>
@@ -433,10 +433,10 @@ export default function Home() {
         </section>
 
         <section id="testimonials" className="py-16 md:py-24 bg-teal-50">
-          <div className="container">
-            <div className="mb-12 text-center">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+            <div className="mb-12 text-center max-w-3xl mx-auto">
               <h2 className="mb-2 text-3xl font-bold tracking-tight md:text-4xl">What Our Customers Say</h2>
-              <p className="mx-auto max-w-2xl text-muted-foreground">
+              <p className="text-muted-foreground">
                 Hear from our satisfied customers who enjoy crystal clear pools without the hassle.
               </p>
             </div>
@@ -446,7 +446,7 @@ export default function Home() {
         </section>
 
         <section className="py-12 bg-teal-600 text-white">
-          <div className="container">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
                 <h2 className="text-2xl font-bold md:text-3xl">Financing Available</h2>
@@ -469,10 +469,10 @@ export default function Home() {
             contactInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="container">
-            <div className="mb-12 text-center">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+            <div className="mb-12 text-center max-w-3xl mx-auto">
               <h2 className="mb-2 text-3xl font-bold tracking-tight md:text-4xl">Contact Us</h2>
-              <p className="mx-auto max-w-2xl text-muted-foreground">
+              <p className="text-muted-foreground">
                 Ready for a cleaner pool with less hassle? Get in touch today for a free quote.
               </p>
             </div>
@@ -658,88 +658,90 @@ export default function Home() {
         </section>
       </main>
       <footer className="border-t bg-teal-50 py-8 relative">
-        <div className="container flex flex-col md:flex-row justify-between gap-6">
-          <div>
-            <div className="mb-4">
-              <span className="text-xl font-bold text-teal-700">Ools</span>
-              <span className="text-lg"> Pool Cleaning</span>
+        <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between gap-6">
+            <div>
+              <div className="mb-4">
+                <span className="text-xl font-bold text-teal-700">Ools</span>
+                <span className="text-lg"> Pool Cleaning</span>
+              </div>
+              <p className="text-sm text-muted-foreground max-w-xs">
+                Houston&apos;s premier pool service company. We take the &apos;P&apos; out of Pools!
+              </p>
             </div>
-            <p className="text-sm text-muted-foreground max-w-xs">
-              Houston&apos;s premier pool service company. We take the &apos;P&apos; out of Pools!
-            </p>
+
+            <div className="space-y-2">
+              <div className="flex items-center">
+                <Phone className="h-4 w-4 mr-2 text-teal-700" />
+                <span className="text-sm">(713) 555-1234</span>
+              </div>
+              <div className="flex items-center">
+                <Mail className="h-4 w-4 mr-2 text-teal-700" />
+                <span className="text-sm">info@oolspoolcleaning.com</span>
+              </div>
+              <div className="flex space-x-3 mt-4">
+                <Link
+                  href="https://www.facebook.com/OolsPoolCleaning"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full bg-white p-2 text-teal-600 hover:bg-teal-100 transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="h-4 w-4" />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/ools.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full bg-white p-2 text-teal-600 hover:bg-teal-100 transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-4 w-4" />
+                </Link>
+                <Link
+                  href="https://www.thumbtack.com/tx/houston/swimming-pool-maintenance/ools-pool-cleaning/service/246403558900032519"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full bg-white p-2 text-teal-600 hover:bg-teal-100 transition-colors"
+                  aria-label="Thumbtack"
+                >
+                  <svg viewBox="0 0 24 24" height="16" width="16" aria-hidden="true" fill="currentColor">
+                    <path d="M11.83 8.34a1.69 1.69 0 00-2.37 0l-4.83 4.84a1.7 1.7 0 002.37 2.38l3.6-3.6 3.65 3.64a1.69 1.69 0 102.38-2.38l-4.8-4.88z"></path>
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            <div>
+              <p className="text-sm text-muted-foreground">
+                &copy; {new Date().getFullYear()} Ools Pool Cleaning. All rights reserved.
+              </p>
+              <div className="flex gap-4 mt-2">
+                <Link href="#" className="text-xs text-muted-foreground hover:text-teal-600">
+                  Privacy Policy
+                </Link>
+                <Link href="#" className="text-xs text-muted-foreground hover:text-teal-600">
+                  Terms of Service
+                </Link>
+              </div>
+            </div>
           </div>
 
-          <div className="space-y-2">
-            <div className="flex items-center">
-              <Phone className="h-4 w-4 mr-2 text-teal-700" />
-              <span className="text-sm">(713) 555-1234</span>
-            </div>
-            <div className="flex items-center">
-              <Mail className="h-4 w-4 mr-2 text-teal-700" />
-              <span className="text-sm">info@oolspoolcleaning.com</span>
-            </div>
-            <div className="flex space-x-3 mt-4">
-              <Link
-                href="https://www.facebook.com/OolsPoolCleaning"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full bg-white p-2 text-teal-600 hover:bg-teal-100 transition-colors"
-                aria-label="Facebook"
+          {showFloatingButton && (
+            <div className="fixed bottom-20 right-6 z-50 animate-pulse">
+              <Button
+                size="lg"
+                className="bg-teal-600 text-white shadow-lg hover:bg-teal-700 hover:shadow-xl transition-all duration-300 hover:scale-105"
+                asChild
               >
-                <Facebook className="h-4 w-4" />
-              </Link>
-              <Link
-                href="https://www.instagram.com/ools.co/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full bg-white p-2 text-teal-600 hover:bg-teal-100 transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-4 w-4" />
-              </Link>
-              <Link
-                href="https://www.thumbtack.com/tx/houston/swimming-pool-maintenance/ools-pool-cleaning/service/246403558900032519"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full bg-white p-2 text-teal-600 hover:bg-teal-100 transition-colors"
-                aria-label="Thumbtack"
-              >
-                <svg viewBox="0 0 24 24" height="16" width="16" aria-hidden="true" fill="currentColor">
-                  <path d="M11.83 8.34a1.69 1.69 0 00-2.37 0l-4.83 4.84a1.7 1.7 0 002.37 2.38l3.6-3.6 3.65 3.64a1.69 1.69 0 102.38-2.38l-4.8-4.88z"></path>
-                </svg>
-              </Link>
+                <Link href="/quote">
+                  Get a Quote
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
             </div>
-          </div>
-
-          <div>
-            <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} Ools Pool Cleaning. All rights reserved.
-            </p>
-            <div className="flex gap-4 mt-2">
-              <Link href="#" className="text-xs text-muted-foreground hover:text-teal-600">
-                Privacy Policy
-              </Link>
-              <Link href="#" className="text-xs text-muted-foreground hover:text-teal-600">
-                Terms of Service
-              </Link>
-            </div>
-          </div>
+          )}
         </div>
-
-        {showFloatingButton && (
-          <div className="fixed bottom-20 right-6 z-50 animate-pulse">
-            <Button
-              size="lg"
-              className="bg-teal-600 text-white shadow-lg hover:bg-teal-700 hover:shadow-xl transition-all duration-300 hover:scale-105"
-              asChild
-            >
-              <Link href="/quote">
-                Get a Quote
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        )}
       </footer>
     </div>
   )
